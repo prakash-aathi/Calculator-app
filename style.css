@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800;900&display=swap'); */
 
 .btnstyle {
     @apply bg-gray-500 rounded-lg py-3 text-xl
@@ -15,6 +15,6 @@
 }
 
 .btnEqual{
-    @apply bg-green-600
+    @apply bg-green-600 rounded-lg py-3 text-xl
     hover:bg-green-400; 
 }
