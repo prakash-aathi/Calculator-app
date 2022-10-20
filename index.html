@@ -15,8 +15,11 @@
         Human Calculator
       </div>
       <div class="card-body">
-        <input type="text" id="display" placeholder="0" class="my-3 px-5 text-2xl uppercase text-right bg-transparent text-gray-400">
-        <div class="my-3 px-5 text-2xl uppercase text-right " id="answer"></div>
+        <div class="flex">
+          <div id="display" class="w-9/12 h-9 my-3 px-5 text-2xl uppercase text-right text-gray-400 "></div>
+          <button class="w-2/12 ml-7 rounded-lg py-3 text-xl bg-red-300 text-red-900 hover:bg-red-400" id="back"> back </button>
+        </div>
+        <div class="w-9/12 my-3 px-5 text-2xl uppercase text-right " id="answer"></div>
         <div class="flex">
           <div class="w-10/12 pr-5">
             <div class="grid grid-cols-3 gap-5">
@@ -47,7 +50,7 @@
       </div>
     </div>
   </div>
-  <script type="module" src="/main.js"></script>
+  <script type="module" src="./main.js"></script>
 </body>
 
 </html>
