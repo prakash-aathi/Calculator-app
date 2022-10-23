@@ -18,3 +18,12 @@
     @apply bg-green-600 rounded-lg py-3 text-xl
     hover:bg-green-400; 
 }
+
+.keysbtn{
+    @apply bg-zinc-400 p-1 rounded-md
+    hover:bg-white text-gray-600;
+}
+
+.key-mod{
+    @apply mx-3 my-5 text-xs
+}

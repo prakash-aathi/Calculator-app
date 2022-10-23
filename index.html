@@ -11,19 +11,48 @@
 <body>
   <div id="app" class="bg-gray-900 min-h-screen text-white p-10">
     <div class="card bg-gray-800 max-w-sm mx-auto p-5 rounded-lg shadow-lg border border-gray-700">
+      <div class="text-right text-xs"><button class="keysbtn">Shortcut keys</button></div>
       <div class="card-heading text-xl tracking-wider ">
-        Human Calculator
+        Modern Calculator
       </div>
-      <div class="card-body">
+      <!-- hidden position toddle -->
+      <div style="display: none;" id="keyboard">
+        <div class="card bg-gray-800 mt-3 max-w-sm mx-auto p-5 rounded-lg shadow-lg border border-gray-700">
+          <div class="flex">
+            <button class="w-2/12 my-2 rounded-lg py-3 text-xs bg-red-300 text-red-900 hover:bg-red-400"> Button Look </button>
+            <div class="key-mod">Button Name</div>
+            <div class="key-mod">Shortcut key</div>
+          </div>
+          <div class="flex">
+            <button class="w-2/12 my-2 rounded-lg py-3 text-xl bg-red-300 text-red-900 hover:bg-red-400"> X </button>
+            <div class="key-mod"> Cancel button</div>
+            <div class="key-mod">b</div>
+          </div>
+          <div class="flex">
+            <button class="rounded-lg my-2 w-2/12 py-3 text-xl bg-red-300 text-red-900 hover:bg-red-400">AC</button>
+            <div class="key-mod">All Clear button</div>
+            <div class="key-mod">c</div>
+          </div>
+          <div class="flex">
+            <button class="btnEqual w-2/12 my-2">=</button>
+            <div class="key-mod">Evaluate button</div>
+            <div class="key-mod">Enter</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- body -->
+      <div id="card-body" style="display:block;">
         <div class="flex">
           <div id="display" class="w-9/12 h-9 my-3 px-5 text-2xl uppercase text-right text-gray-400 "></div>
-          <button class="w-2/12 ml-7 rounded-lg py-3 text-xl bg-red-300 text-red-900 hover:bg-red-400" id="back"> back </button>
+          <button class="w-2/12 ml-7 rounded-lg py-3 text-xl bg-red-300 text-red-900 hover:bg-red-400" id="back"> X
+          </button>
         </div>
         <div class="w-9/12 my-3 px-5 text-2xl uppercase text-right " id="answer"></div>
         <div class="flex">
           <div class="w-10/12 pr-5">
             <div class="grid grid-cols-3 gap-5">
-              <button class="rounded-lg py-3 text-xl bg-red-300 text-red-900 hover:bg-red-400" id="clearAll">C</button>
+              <button class="rounded-lg py-3 text-xl bg-red-300 text-red-900 hover:bg-red-400" id="clearAll">AC</button>
               <button class="btnstyle" id="but">(</button>
               <button class="btnstyle ">)</button>
               <button class="btnstyle">7</button>
